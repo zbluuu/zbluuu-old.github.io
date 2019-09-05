@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link
+            href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"
+            rel="stylesheet"
+            type="text/css"
+    >
+
+    <link
+            href="style.css"
+            type="text/css"
+            rel="stylesheet"
+    >
+
+        <title>Blu's Homepage</title>
+
+</header>
+
+<body>
+<div class="float"><a class="main1" href="index.html"><< Go back</a></div>
+<div class="main2">
+    <h1>Downloadpage</h1>
+    <p class="placeholder"> WORK IN PROGRESS -- MAY NOT FULLY WORKING bc thery old, currenly working at :) </p>
+    <hr>
+
+    <button class="accordion"><b>README.txt</b> <sup>!<i>important</i></sup></button>
+    <div class="panel">
+        <p>Please know that I cant do anythin if this damaged ur Computer. If it this happen- it wold nice if you reports this error, so i can fix it.
+            Most works was used with /bin/bash.</p>
+    </div>
+    <button class="accordion">Automatic AUR Packages Installer <i>(Arch linux only)</i></button>
+    <div class="panel">
+        <h3>Info: </h3>
+        <p>This Shell is for Arch Linux, for those who have problem or find too much to install a package that isnt in command <code>pacman -S</code> and also
+        useful for quick installing without again over and over typing each command. Please dont run as user ROOT, run as command SUDO!</p>
+        <hr>
+        <h3><code>SHELL CODE:</code></h3>
+        <div class="bg1" ><iframe src="download/txt/AUR-Installer.txt"></iframe></div>
+    </div>
+    <button class="accordion">LAMP Installer <i>(All Ubuntu only)</i></button>
+    <div class="panel">
+        <h3>Info: </h3>
+        <p>It is actally an simple LAMP installer for only all ubuntu version made. I used this just as shell training</p>
+        <hr>
+        <h3><code>SHELL CODE:</code></h3>
+        <div class="bg1" ><iframe src="download/txt/website%20installer.txt"></iframe></div>
+    </div>
+    <button class="accordion">Webmin Installer <i>(Debain/Ubuntu only, recommend: Ubuntu 16.04)</i></button>
+    <div class="panel">
+        <h3>Info: </h3>
+        <p>Webmin is an useful Website Tool for Admin only. It shell is an automatic Installer for you and i also tried make terminal short and clean
+        . Tested with Debain/Ubuntu 16.07</p>
+        <hr>
+        <h3><code>SHELL CODE:</code></h3>
+        <div class="bg1" ><iframe src="download/txt/Webmin Install-withloadinbar.txt"></iframe></div>
+    </div>
+    <button class="accordion">Coming soon <sup>TM</sup>...</button>
+    <div class="panel">
+        <p> ~ </p>
+    </div>
+
+    <p class="placeholder"><i>Found some Error/Bug or want me to update? Request me or contact me! Thanks you I know those are old Script I made back 2016-17</i></p>
+    <p class="placeholder"><b>ToDo</b>:  
+    <li>Check by specific operating system with date</li>
+    <li>Check by running right</li> 
+    <li>English Error Typos</li> 
+    </p>
+
+
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        }
+    }
+</script>
+</body>
+
+<footer>
+
+</footer>
+</html>
