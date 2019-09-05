@@ -1,0 +1,252 @@
+body {
+    font-family: Ubuntu, "Ubuntu Mono", monospace;
+    background: url("pic/bk.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+code {
+    font-family: "Ubuntu Mono", monospace, mono;
+}
+
+p.placeholder {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p.centerred {
+    text-align: center;
+    color: rgba(220, 0, 22, 0.8);
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+div.main1 {
+    background-color: rgba(207, 241, 255, 0.37);
+    color: aliceblue;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:11em;
+    margin-top: -10em;
+    margin-left: -15em;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.31);
+
+}
+
+div.main2 {
+    background-color: rgba(207, 241, 255, 0.37);
+    color: aliceblue;
+    padding: 5px;
+    margin: 25px auto;
+    width: 90%;
+    height: 85vh;
+    min-height: 500px;
+    max-width: 900px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.31);
+    overflow: auto;
+
+}
+
+div h1 {
+    text-align: center;
+}
+
+div a {
+    text-align: right;
+}
+
+div.float {
+    position:fixed;
+    top: 5px;
+    left: 1%;
+}
+
+.bg1 {
+    background-color: rgba(255, 255, 255, 0.61);
+
+}
+
+div h1, div h2 {
+    text-shadow: 0px 0px 5px rgba(220, 245, 255, 0.47);
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    padding: 10px;
+
+}
+
+a.main1:link, a.main1:visited {
+    color: #c3fffd;
+    text-decoration: none;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    opacity:0.5;
+    transition:all 0.25s ease-in;
+}
+
+a.main1:hover {
+    color: #c3fffd;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity:1;
+    transition:all 0.5s ease-in;
+}
+
+hr {
+    height: 2px;
+    color: rgba(207, 241, 255, 0.47);
+    background-color: rgba(207, 241, 255, 0.47);
+    border: none;
+
+}
+
+.date1 {
+    color: rgba(255, 255, 255, 0.10);
+}
+
+img.gif1 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 1.5%;
+}
+img.gif2 {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    display: block;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 1px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+   /*  resize: vertical; */
+}
+
+
+
+/*---- copied from other explame site with some my edited way ----*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: rgba(238, 238, 238, 0.27);
+    color: rgba(177, 248, 255, 0.71);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: rgba(238, 238, 238, 0.37);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    color: #e2e2e2;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: rgba(217, 217, 217, 0.66);
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /*display: inline-block; */
+    border: 1px solid rgba(86, 86, 86, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.44);
+    color: lightcyan;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    transition:all 0.5s ease-in;
+
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: rgba(0, 209, 238, 0.7);
+    color: white;
+    padding: 13px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    transition:all 0.5s ease-in;
+}
+
+input[type=submit]:hover {
+    width: 20%;
+    background-color: rgba(142, 252, 255, 0.7);
+    color: white;
+    padding: 13px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    box-shadow: 0px 0px 5px #8efcff;
+    transition:all 0.5s ease-in;
+}
+
+input[type=text]:hover {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /*display: inline-block; */
+    border: 1px solid rgba(86, 86, 86, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.44);
+    color: lightcyan;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    box-shadow: 0px 0px 3px #000000;
+    transition:all 0.5s ease-in;
+
+}
