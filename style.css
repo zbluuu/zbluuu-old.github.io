@@ -1,10 +1,6 @@
 body {
     font-family: Ubuntu, "Ubuntu Mono", monospace;
-    background: url("pic/bk.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url("pic/bk.jpg");
 }
 code {
     font-family: "Ubuntu Mono", monospace, mono;
