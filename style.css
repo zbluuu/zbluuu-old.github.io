@@ -1,4 +1,5 @@
 body {
+    height: 35em;
     font-family: Ubuntu, "Ubuntu Mono", monospace;
     background-image: url("pic/bk.jpg");
 }
